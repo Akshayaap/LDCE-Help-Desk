@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>LDCE Help Desk</title>
+</head>
+<body style="background-color:ivory;">
+    <form id="form1" runat="server">
+    
+            <table width="100%">
+                <tr align="center">
+                
+                    <td align="center" style="z-index: 100; left: 0px; vertical-align: middle; font-size:xx-large;
+                                line-height: normal; letter-spacing: normal; background-color:Maroon; color:#ffffff;
+                                text-align: center; border-left-color:Maroon; border-bottom-color:Maroon; border-top-style: solid; border-top-color:Maroon; border-right-style: solid; border-left-style: solid; border-right-color:Maroon; border-bottom-style: solid; height: 45px;"> LD College of Engineering Online Help Desk
+                            
+                    </td>
+               </tr>
+               
+               <tr>
+               <td>
+        
+                        <asp:Menu ID="mainMenu" align ="center" Width="1000" style="text-align:center;" StaticMenuItemStyle-Width="25px" StaticMenuItemStyle-Font-Size="Larger" DynamicMenuItemStyle-Font-Size="Medium" DynamicMenuItemStyle-Width="20px" runat="server" DynamicMenuItemStyle-ItemSpacing="3px" BackColor="#FFFBD6" ForeColor="#990000" Height="66px" BorderColor="Black" BorderWidth="2px" Font-Bold="True" Font-Size= "1em" Font-Underline="True" Orientation="Horizontal" DynamicHorizontalOffset="2" Font-Names="Lucida Sans Unicode" StaticSubMenuIndent="10px" ClientIDMode="Static" RenderingMode="Table">
+  
+                        <items>
+                        
+                        
+                                <asp:MenuItem Text="HOME"  Value="HOME" NavigateUrl="~/aboutUs.aspx" >
+                                              
+                                             
+                                             
+                                                
+                                 </asp:MenuItem>
+                       
+                                 
+                                 <asp:MenuItem   Text="LOGIN" Value="LOGIN " NavigateUrl="~/login.aspx">
+                                            
+                                 </asp:MenuItem>
+                                 
+                                 <asp:MenuItem Text="SIGN UP"  Value="SIGN UP" NavigateUrl="~/createNewAccount.aspx">       
+                                            
+                                                                  
+                                 </asp:MenuItem>
+                                 
+                                
+                                 
+                                 <asp:MenuItem Text="REQUEST" Value="REQUEST" NavigateUrl="~/login.aspx" >
+                                              
+                                  </asp:MenuItem> 
+                                 
+                                 
+                                 <asp:MenuItem Text="FAQ"  NavigateUrl="~/FAQ.aspx" Value="FAQ'S" ></asp:MenuItem>
+                                  
+                                              
+                                 <asp:MenuItem Text="GALLERY"  Value="GALLERY" NavigateUrl="~/pictureGallery.aspx"></asp:MenuItem>
+                                 
+                                 
+                                 <asp:MenuItem NavigateUrl= "~/contactMe.aspx" Text="CONTACT US" Value="CONTACT US">
+                                       <%-- <asp:MenuItem  Text="FeedBack" NavigateUrl="~/feedback.aspx" Value="FeedBack"></asp:MenuItem> --%>
+                                 </asp:MenuItem>
+                        </items>
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" Width="25px" />
+                            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                            <DynamicMenuStyle BackColor="#FFFBD6" />
+                            <StaticSelectedStyle BackColor="#FFCC66" />
+                            <DynamicSelectedStyle BackColor="#FFCC66" />
+                            <DynamicMenuItemStyle Font-Size="Large" HorizontalPadding="5px" ItemSpacing="3px"
+                                VerticalPadding="2px" Width="20px" />
+                            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                                    
+                        </asp:Menu>
+                        </td>
+        
+                    </tr>
+                    
+                                    
+                    
+                    <tr>
+                    
+                    <td style="background-color:ivory;">
+                                <%--<asp:ImageButton ID="ImageButton1"  ImageAlign="Right" Width="80" Height="100" ImageUrl="~/images/pics/logo1.jpg" runat="server"/>--%>
+                                <asp:ImageButton ID="ImageButton2"  ImageAlign="Right" Width="175px" Height="175px" ImageUrl="~/images/pics/new1.jpg" runat="server"/>
+                    
+                    </td>
+                    
+                   
+                    </tr>
+                    
+                    <tr>
+                            <td>
+                   
+                                     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+                            </td>
+                   </tr>
+                   <tr>
+                   <td align="center" style="text-decoration:underline; color:Green; font-weight:bold; font-size:12pt; font-family:Lucida Calligraphy; background-color: ivory;">
+                   
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            
+                            <br />
+                            <br />
+                            &nbsp;</td>
+                  
+                   </tr>
+               
+                                                                 
+         </table>
+         
+         
+    </form>
+    
+     </body>
+     
+ </html>
+
